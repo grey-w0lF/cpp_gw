@@ -30,6 +30,22 @@ int main()
 //    cout<<res;
 
 
+    // priority_queue
+    // is same as max/min __heap
+    // max heap syntax
+    // priority_queue<int> pq;
+    // min heap syntax
+    // priority_queue <int,vector<int>,greater<int>> pq;
+
+
+    //  list in stl
+    // list<int> ll;
+    //doubly linked list implemented 
+
+    // next_permutation(v.begin(),v.end());
+    //    int n = 9;
+    
+    // cout<<__builtin_popcount(n);
     
     return 0;
 }
