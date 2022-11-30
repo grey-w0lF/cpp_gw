@@ -73,6 +73,7 @@ void getReapeatingMissing(vector<int> v1)
     return;
 
 }
+
 int main(){
 
    //Remove Duplicates From A Sorted Array
@@ -83,8 +84,8 @@ int main(){
 //    vector<int> v1 {1,2,3,3,4,5,6};
 //    vector<int> v2 {3,3,5};
 //    getIntersection(v1,v2);
-vector<int> v{3,1,2,5,4,6,7,5};
-getReapeatingMissing(v);
+// vector<int> v{3,1,2,5,4,6,7,5};
+// getReapeatingMissing(v);
 
 
   
