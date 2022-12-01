@@ -82,12 +82,28 @@ void recBubbleSort(vector<int> &v,int i)
      }
      recBubbleSort(v,i+1);
 }
+
+void recInsertionSort(vector<int> &v,int i,int j,int k)
+{
+    if(i>=v.size()-1)
+    {
+        return;
+    }
+    while(j>=0 && k<=v[j])
+    {
+        v[j+1]=v[j];
+        j--;
+    }
+    v[j+1]=k;
+    recInsertionSort(v,i+1,i-1,v[i]);
+}
 int main(){
 
 
     vector<int> v{9,8,7,2,1,3};
     // mergeSort(v,0,v.size()-1);
     // recBubbleSort(v,0);
+    recInsertionSort(v,1,0,v[1]);
     for(auto i:v)
     {
         cout<<i<<" ";
